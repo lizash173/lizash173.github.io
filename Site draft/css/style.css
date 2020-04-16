@@ -1,0 +1,38 @@
+
+body {
+  font: 18px/1.5 sans-serif;
+}
+
+#top {
+  max-width: 970px;
+	margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  grid-gap: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+header, footer {
+  padding-left: 20px;
+  grid-column: 1 / -1 ;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "Work1"
+    "Work2"
+    "Work3";
+  grid-gap: 30px;
